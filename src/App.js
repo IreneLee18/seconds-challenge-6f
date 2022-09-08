@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import{Routes,Route}from'react-router-dom'
+import Home from './pages/Home'
+import Challenge from './pages/Challenge'
+import Restart from './pages/Restart'
+function App(){
+return(
+  <>
+  <Routes>
+    <Route index element={<Home/>}/>
+    <Route path="challenge" element={<Challenge/>}/>
+    <Route path="restart" element={<Restart/>}/>
+  </Routes>
+  </>
+)
 }
-
 export default App;

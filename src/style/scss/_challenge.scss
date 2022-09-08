@@ -1,0 +1,79 @@
+.challenge {
+  .top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 104px;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 128px;
+
+    &-item {
+      @include title-d-inline;
+    }
+
+    &-score {
+      display: flex;
+
+      p {
+        margin-top: 12px;
+        padding-top: 12px;
+
+        &:first-child {
+          background: $white;
+          color: $primary;
+          padding: 12px 16px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  .countdown {
+    h1 {
+      font-size: 96px;
+    }
+
+    color: $white;
+    font-style: italic;
+  }
+
+  .calculator {
+    display: flex;
+    font-size: 112px;
+    font-weight: bold;
+    justify-content: space-between;
+    position: relative;
+
+    &::after {
+      content: 'press enter to answer';
+      position: absolute;
+      bottom: -25px;
+      right: 20px;
+      font-size: 24px;
+      font-weight: normal;
+      font-style: italic;
+      color: $white;
+    }
+
+    .operation {
+      color: $white;
+    }
+
+    input {
+      @include size(255px, 131px);
+      border: none;
+      outline: none;
+      font-size: 112px;
+      text-align: center;
+    }
+
+    input[type=number]::-webkit-outer-spin-button,
+    input[type=number]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}

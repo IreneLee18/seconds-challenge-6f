@@ -1,0 +1,21 @@
+.restart {
+  text-align: center;
+
+  h3 {
+    @include title-d-inline;
+  }
+
+  h2 {
+    font-size: 56px;
+    margin-top: 24px;
+
+    span {
+      color: $white;
+    }
+  }
+
+  h1 {
+    font-size: 112px;
+    margin-bottom: 104px;
+  }
+}
