@@ -28,6 +28,7 @@ function Challenge() {
     }, 1000);
     return () => {
       clearInterval(timeId);
+      // timeId.current = null;
     };
   }, [setTime, time]);
   useEffect(() => {
@@ -59,7 +60,7 @@ function Challenge() {
         }
       }
       console.log(factor);
-      last.current = factor[parseInt(Math.random() * factor.length)];
+      last.current = factor[Math.floor((Math.random() * factor.length))];
     }
 
     switch (operator.current) {
