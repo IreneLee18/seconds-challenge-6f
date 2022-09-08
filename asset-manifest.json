@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/seconds-challenge-6f/static/css/main.0043b728.css",
+    "main.js": "/seconds-challenge-6f/static/js/main.6f42925e.js",
+    "static/js/787.a3f8f3b8.chunk.js": "/seconds-challenge-6f/static/js/787.a3f8f3b8.chunk.js",
+    "index.html": "/seconds-challenge-6f/index.html",
+    "main.0043b728.css.map": "/seconds-challenge-6f/static/css/main.0043b728.css.map",
+    "main.6f42925e.js.map": "/seconds-challenge-6f/static/js/main.6f42925e.js.map",
+    "787.a3f8f3b8.chunk.js.map": "/seconds-challenge-6f/static/js/787.a3f8f3b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0043b728.css",
+    "static/js/main.6f42925e.js"
+  ]
+}
