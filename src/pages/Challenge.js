@@ -2,7 +2,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 function Challenge() {
   let navigate = useNavigate();
-  const timeId = useRef(null);
   const [time, setTime] = useState(60);
   const [answer, setAnswer] = useState("");
   const operation = ["+", "-", "×", "÷"];
@@ -14,7 +13,7 @@ function Challenge() {
   const scoreStage = useRef(1);
   const [totalScore, setTotalScore] = useState(0);
   useEffect(() => {
-    timeId.current = setInterval(() => {
+    let timeId = setInterval(() => {
       setTime((prev) => prev - 1);
       if (time >= 41 && time <= 60) {
         scoreStage.current = 1;
@@ -28,8 +27,7 @@ function Challenge() {
       }
     }, 1000);
     return () => {
-      clearInterval(timeId.current);
-      timeId.current = null;
+      clearInterval(timeId);
     };
   }, [setTime, time]);
   useEffect(() => {
